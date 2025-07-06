@@ -1,0 +1,1 @@
+ansible-playbook -i inventory.ini playbooks/check_resources.yaml
