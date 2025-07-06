@@ -1,0 +1,9 @@
+- name: Check server resources
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Print uptime
+      shell: uptime
+      register: result
+    - debug:
+        msg: "{{ result.stdout }}"
